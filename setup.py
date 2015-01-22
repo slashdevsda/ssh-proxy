@@ -27,6 +27,11 @@ setup(
     install_requires=[
         'paramiko',
     ],
-    scripts=['scripts/xmlproc_parse', 'scripts/xmlproc_val'],
+    #scripts=['psychic_bear/psychic_bear.py'],
+    entry_points={
+        'console_scripts': [
+            'psychic_bear = psychic_bear.psychic_bear:main',
+        ]
+    },
 )      
 

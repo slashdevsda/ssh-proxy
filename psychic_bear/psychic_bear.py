@@ -10,14 +10,18 @@ import traceback
 import threading, multiprocessing
 import paramiko
 from paramiko.py3compat import b, u, decodebytes
-import conf
+import psychic_bear.conf as conf
 import time
 import select
 from pprint import pprint
 # setup logging
 paramiko.util.log_to_file('demo_server.log')
-import utils
 
+import psychic_bear.utils as utils
+
+#import psychic_bear
+
+#exit(0)
 host_key = paramiko.RSAKey(filename='test_rsa.key')
 #host_key = paramiko.DSSKey(filename='test_dss.key')
 
@@ -315,7 +319,7 @@ class ClientProxy(threading.local):
 
 
 
-if __name__ == "__main__":
+def main():
     services = []
     utils.validate_conf()
     for conf_server in conf.SERVERS:
@@ -326,3 +330,6 @@ if __name__ == "__main__":
 
     for service in services:
         service.join()
+
+if __name__ == "__main__":
+    main()
