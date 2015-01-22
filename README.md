@@ -1,11 +1,13 @@
 
 # Psychic Bear
 
-SSH-Proxy using python3 and Paramiko
+_SSH-Proxy using python3 and Paramiko_
 
-## Using a Virtualenv
+## Installing & Running
 
-### Setup & downloading
+### Using a Virtualenv
+
+#### Setup & downloading
 
 ```
 $ mkdir -p psychic-bear/venv && cd psychic-bear
@@ -17,7 +19,7 @@ $ pip install -r requierment.txt
 ```
 
 
-### Run
+#### Run
 
 ```
 $ cd psychic-bear/ssh-proxy
@@ -25,14 +27,14 @@ $ source ../venv/bin/activate
 $ python -m "psychic_bear.psychic_bear"
 ```
 
-## Using PIP
+### Using PIP (easier)
 
 ```
-$ git clone https://github.com/ecuer-thomas/ssh-proxy.git
-$ cd ssh-proxy && python setup.py install
+$ pip install -e git+git@github.com:ecuer-thomas/ssh-proxy.git#egg=psychic_bear
 $ psychic_bear
-     ...
-     ...
-     ...
 ```
 
+
+## Configuration
+
+# TODO

@@ -98,7 +98,7 @@ SERVERS = [
             Endpoint(
                 host="5.39.76.111",
                 username="thomas",
-                password="apSv20Yy",
+                password="flop flop",
             ),
             Endpoint(
                 host="192.168.0.42",
