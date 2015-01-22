@@ -19,10 +19,8 @@ paramiko.util.log_to_file('demo_server.log')
 
 import psychic_bear.utils as utils
 
-#import psychic_bear
 
-#exit(0)
-host_key = paramiko.RSAKey(filename='test_rsa.key')
+host_key = paramiko.RSAKey(filename=os.path.dirname(__file__) + '/../test_rsa.key')
 #host_key = paramiko.DSSKey(filename='test_dss.key')
 
 print('Read key: ' + u(hexlify(host_key.get_fingerprint())))
