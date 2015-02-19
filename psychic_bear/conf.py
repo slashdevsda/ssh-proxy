@@ -101,7 +101,7 @@ SERVERS = [
                 password="flop flop",
             ),
             Endpoint(
-                host="192.168.0.42",
+                host="creamy.hd.free.fr",
                 username="publication",
                 key_file="/home/thomas/.ssh/id_rsa.pub",
             )

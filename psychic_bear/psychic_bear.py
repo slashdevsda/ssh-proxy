@@ -149,8 +149,8 @@ class SSHTransport(threading.Thread):
         self.buffers[chan] = b""
         self.buffers[proxy_chan] = b""
 
-    
-        
+
+
 
     def run(self):
         print("start new transport thread")
